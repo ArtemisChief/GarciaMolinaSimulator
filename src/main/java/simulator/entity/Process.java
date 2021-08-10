@@ -226,10 +226,6 @@ public class Process implements Runnable {
         isRunning = running;
     }
 
-    public boolean isRunning() {
-        return isRunning;
-    }
-
     public String byteToStr(byte[] buffer) {
         int length = 0;
         for (int i = 0; i < buffer.length; ++i) {
