@@ -16,7 +16,6 @@ import simulator.entity.Process;
 import java.util.Map;
 
 public class ProcessController {
-
     static private int ID;
     private ObservableList<Process> processes;
     private ObservableList<Map.Entry<Integer, Integer>> delays;
@@ -57,5 +56,4 @@ public class ProcessController {
                 }
         );
     }
-
 }

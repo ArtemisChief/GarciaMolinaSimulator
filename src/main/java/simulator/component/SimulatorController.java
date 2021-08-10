@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SimulatorController {
-
     public static int WaitTime;
     public static int Heartbeat;
     public static ObservableList<String> Logs;
