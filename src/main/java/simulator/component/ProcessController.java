@@ -58,14 +58,4 @@ public class ProcessController {
         );
     }
 
-    @FXML
-    protected void confirm(){
-
-    }
-
-    @FXML
-    protected void cancel(){
-
-    }
-
 }
