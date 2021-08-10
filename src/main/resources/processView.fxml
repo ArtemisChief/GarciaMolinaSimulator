@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulator.component.ProcessController">
+   <children>
+      <Label layoutX="14.0" layoutY="7.0" text="Process ID: " />
+      <Label fx:id="idLabel" layoutX="91.0" layoutY="7.0" text="1" />
+      <TableView fx:id="detailTable" editable="true" layoutY="28.0" prefHeight="305.0" prefWidth="190.0" stylesheets="tableView.css">
+        <columns>
+          <TableColumn fx:id="idColumn" editable="false" prefWidth="87.5" resizable="false" sortable="false" text="with ID" />
+          <TableColumn fx:id="delayColumn" prefWidth="87.5" resizable="false" sortable="false" text="Delay" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

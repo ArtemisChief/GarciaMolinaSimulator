@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simulator.component.SimulatorController">
+   <children>
+      <ListView fx:id="listView" layoutY="410.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="360.0" />
+      <Button fx:id="addProcessBtn" layoutX="14.0" layoutY="70.0" mnemonicParsing="false" onAction="#addProcess" prefHeight="23.0" prefWidth="95.0" text="Add Process" />
+      <Button fx:id="startBtn" layoutX="240.0" layoutY="8.0" mnemonicParsing="false" onAction="#startSimulation" text="Start Simulation" />
+      <TableView fx:id="processTable" layoutY="100.0" prefHeight="310.0" prefWidth="360.0" stylesheets="tableView.css">
+        <columns>
+          <TableColumn fx:id="processColumn" editable="false" prefWidth="66.0" resizable="false" text="Process" />
+          <TableColumn fx:id="statusColumn" prefWidth="65.0" resizable="false" sortable="false" text="Status" />
+            <TableColumn editable="false" prefWidth="214.0" resizable="false" sortable="false" text="Operation">
+               <columns>
+                  <TableColumn fx:id="removeColumn" editable="false" prefWidth="107.0" resizable="false" sortable="false" text="Remove" />
+                  <TableColumn fx:id="detailsColumn" editable="false" prefWidth="107.0" resizable="false" sortable="false" text="Details" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TextField fx:id="waitTimeTextField" layoutX="130.0" layoutY="8.0" prefHeight="23.0" prefWidth="87.0" text="1500" />
+      <Label layoutX="14.0" layoutY="12.0" prefHeight="15.0" prefWidth="95.0" text="Wait Time (ms): " />
+      <Button fx:id="clearBtn" layoutX="240.0" layoutY="70.0" mnemonicParsing="false" onAction="#clear" prefHeight="23.0" prefWidth="108.0" text="Clear" />
+      <Button fx:id="stopBtn" disable="true" layoutX="240.0" layoutY="39.0" mnemonicParsing="false" onAction="#stopSimulation" prefHeight="23.0" prefWidth="108.0" text="Stop Simulation" />
+      <Label layoutX="15.0" layoutY="43.0" text="Heartbeat (ms): " />
+      <TextField fx:id="heartbeatTextField" layoutX="130.0" layoutY="39.0" prefHeight="23.0" prefWidth="87.0" text="1000" />
+   </children>
+</Pane>
