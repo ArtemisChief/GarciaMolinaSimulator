@@ -15,7 +15,6 @@ import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class SimulatorController {
 
